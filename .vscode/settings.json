@@ -3,5 +3,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
-  "vitest.commandLine": "pnpm exec vitest"
+  "vitest.commandLine": "pnpm exec vitest",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
 }

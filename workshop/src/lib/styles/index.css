@@ -1,0 +1,82 @@
+@import 'reveal.js/dist/reveal.css';
+@import './code.css';
+@import './theme.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-Bold.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-RegularItalic.otf) format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-MediumItalic.otf) format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-BoldItalic.otf) format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: monolisa;
+  src: url(./MonoLisa-LightItalic.otf) format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+html {
+  font-feature-settings: 'calt' on, 'liga' on, 'ss02' on;
+}
+
+@layer base {
+  section {
+    @apply space-y-8;
+  }
+}
+
+@layer component {
+  .grid-stack,
+  .grid-center {
+    @apply grid grid-cols-1 grid-rows-1 [&>*]:col-start-1 [&>*]:col-end-1 [&>*]:row-start-1 [&>*]:row-end-1;
+  }
+  .grid-center {
+    @apply place-items-center;
+  }
+}
