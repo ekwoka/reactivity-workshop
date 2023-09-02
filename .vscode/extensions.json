@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "jordaneckowitz.indexify",
+    "esbenp.prettier-vscode",
+    "zixuanchen.vitest-explorer",
+    "hoovercj.vscode-power-mode",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
