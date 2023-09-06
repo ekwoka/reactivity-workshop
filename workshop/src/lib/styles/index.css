@@ -62,7 +62,10 @@
 }
 
 html {
-  font-feature-settings: 'calt' on, 'liga' on, 'ss02' on;
+  font-feature-settings:
+    'calt' on,
+    'liga' on,
+    'ss02' on;
 }
 
 @layer base {

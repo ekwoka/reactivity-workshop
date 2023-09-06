@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Presentation } from '@components'
-  import { Intro, Reactivity, DeclarativeUI, Repo } from '@slides'
+  import { Presentation } from '@components';
+  import { Intro, Reactivity, DeclarativeUI, Repo } from '@slides';
 </script>
 
 <Presentation>
-	<Intro />
+  <Intro />
   <Reactivity />
   <DeclarativeUI />
   <Repo />

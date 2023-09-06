@@ -1,5 +1,5 @@
 <script>
-  import { Code, Slide, FitText } from '@components'
+  import { Code, Slide, Step, FitText } from '@components'
 </script>
 
 <Slide animate class="">
@@ -12,4 +12,15 @@
     pnpm i
     code .
   </Code>
+</Slide>
+<Slide animate>
+  <div class="text-1xl max-w-max flex flex-col gap-0 leading-normal mx-auto">
+  <Step fadeInThenSemiOut class="block mr-auto">reactivity-workshop <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// root</span></Step>
+  <Step fadeInThenSemiOut class="block mr-auto">├── packages</Step>
+  <Step fadeInThenSemiOut class="block mr-auto whitespace-pre">│  └── reactivity <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// do work here</span></Step>
+  <Step fadeInThenSemiOut class="block mr-auto whitespace-pre">│     ├── src <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// our engine!</span></Step>
+  <Step fadeInThenSemiOut class="block mr-auto whitespace-pre">│     └── tests <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// tests, obviously</span></Step>
+  <Step fadeInThenSemiOut class="block mr-auto">├── sandbox <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// for playing</span></Step>
+  <Step fadeInThenSemiOut class="block mr-auto">└── workshop <span class="opacity-50 [.visible:not(.current-fragment)>&]:opacity-0 transition-opacity">// these slides</span></Step>
+  </div>
 </Slide>
