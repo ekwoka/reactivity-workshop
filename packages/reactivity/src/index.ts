@@ -5,3 +5,7 @@ export const Signal = () => {
 export const Effect = () => {
   throw new Error('Effect not implemented');
 };
+
+if (import.meta.vitest) {
+  describe.skip('Signal', () => {});
+}
