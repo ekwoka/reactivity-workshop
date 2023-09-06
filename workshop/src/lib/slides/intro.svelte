@@ -24,21 +24,16 @@
 </Slide>
 <Slide animate>
   <FitText type="h2" class="font-semibold tracking-widest">
-   Workshop Goals
-  </FitText>
-</Slide>
-<Slide animate>
-  <FitText type="h2" class="font-semibold tracking-widest">
     Workshop Goals
   </FitText>
   <ul>
-    <Step type="li" class="mt-4">
+    <Step fadeInThenSemiOut type="li" class="mt-4">
         learn about reactivity
     </Step>
-    <Step type="li" class="mt-4">
+    <Step fadeInThenSemiOut type="li" class="mt-4">
         design a reactivity engine api
     </Step>
-    <Step type="li" class="mt-4">
+    <Step fadeInThenSemiOut type="li" class="mt-4">
         optimize the snot out of it
     </Step>
   </ul>
