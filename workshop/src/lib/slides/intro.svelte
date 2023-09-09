@@ -1,9 +1,7 @@
 <script lang="ts">
   import { FitText, Slide, Step } from '@components';
   import Alpine from '@components/icons/alpine.svelte';
-  import Next from '@components/icons/next.svelte';
-  import Preact from '@components/icons/preact.svelte';
-  import Typescript from '@components/icons/typescript.svelte';
+  import GitHub from '@components/icons/github.svelte';
 </script>
 
 <Slide animate class="uppercase">
@@ -21,8 +19,12 @@
   <Step class="block text-xs font-extrabold tracking-widest">
     🎉 Eric Kwoka 🚀
   </Step>
-  <Step class="block text-xs font-extrabold tracking-widest">
-    Full Stack Engineer,Self Employed
+  <Step
+    class="flex flex-col justify-center text-xs font-extrabold tracking-widest">
+    Full Stack Engineer, Freelance
+    <a class="lowercase" href="https://thekwoka.net">https://thekwoka.net</a>
+    <GitHub className="w-8 h-8 mx-auto mt-8" />
+    <a class="lowercase" href="https://github.com/ekwoka">@ekwoka</a>
   </Step>
 </Slide>
 <Slide animate class="uppercase">

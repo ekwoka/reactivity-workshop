@@ -7,6 +7,8 @@
     Repo,
     Signal,
     Optimize,
+    Reactive,
+    Outro,
   } from '@slides';
 </script>
 
@@ -17,4 +19,6 @@
   <Repo />
   <Signal />
   <Optimize />
+  <Reactive />
+  <Outro />
 </Presentation>
