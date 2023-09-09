@@ -2,14 +2,46 @@
   import { FitText, Slide, Step } from '@components';
   import Alpine from '@components/icons/alpine.svelte';
   import GitHub from '@components/icons/github.svelte';
+
+  const start = new Date('2023-09-09T10:00:00Z');
+
+  const relativeFormatter = new Intl.RelativeTimeFormat('en', {
+    style: 'short',
+  });
+  export const inRelativeTime = (dateTime: Date) => {
+    const diff = dateTime.getTime() - Date.now();
+    for (const [unit, size] of timeSizes) {
+      const diffInUnit = absFloor(diff / size);
+      if (diffInUnit)
+        return relativeFormatter.format(diffInUnit * Math.sign(diff), unit);
+    }
+    return 'Now';
+  };
+
+  const absFloor = (n: number) => Math.floor(Math.abs(n));
+
+  const timeSizes: [Intl.RelativeTimeFormatUnit, number][] = [
+    ['day', 1000 * 60 * 60 * 24],
+    ['hour', 1000 * 60 * 60],
+    ['minute', 1000 * 60],
+    ['second', 1000],
+  ];
+
+  let time = '';
+  setInterval(() => {
+    time = inRelativeTime(start);
+  }, 100);
 </script>
 
 <Slide animate class="uppercase">
   <h1 class="font-extrabold tracking-widest">
-    <FitText type="span" class="font-extrabold tracking-widest"
-      >Reactivity</FitText>
-    <FitText type="span" class="font-extrabold tracking-widest"
-      >from Scratch</FitText>
+    <FitText type="span" class="font-extrabold tracking-widest">
+      Reactivity
+    </FitText>
+    <FitText type="span" class="font-extrabold tracking-widest">
+      from Scratch
+    </FitText>
+    <p>Starts <span class="italic">{time}</span></p>
   </h1>
 </Slide>
 <Slide animate animateRestart class="flex flex-col uppercase">
