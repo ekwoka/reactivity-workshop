@@ -1,7 +1,7 @@
-import Slides from './slides.svelte'
+import Slides from './slides.svelte';
 
 const app = new Slides({
-	target: document.getElementById('app'),
-})
+  target: document.getElementById('app'),
+});
 
-export default app
+export default app;
