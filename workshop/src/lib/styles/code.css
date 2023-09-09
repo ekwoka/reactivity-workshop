@@ -3,7 +3,7 @@
     'calt' on,
     'liga' on,
     'ss02' on;
-  @apply block overflow-x-auto bg-zinc-800 p-2 leading-loose text-zinc-100;
+  @apply block overflow-x-auto bg-zinc-800 p-2 leading-loose text-orange-300;
 }
 
 .hljs-keyword,
@@ -14,10 +14,6 @@
 .hljs-name,
 .hljs-string {
   color: #5de4c7;
-}
-
-.hljs-keyword {
-  @apply italic;
 }
 
 .hljs-code {
@@ -56,6 +52,42 @@
 .hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #a6accd;
-  @apply italic;
+  @apply italic text-neutral-600;
+}
+
+.highlight-line .hljs-comment,
+.highlight-line .hljs-quote,
+.highlight-line .hljs-deletion,
+.highlight-line .hljs-meta {
+  @apply italic text-neutral-400;
+}
+
+.hljs-keyword {
+  @apply italic text-purple-400;
+}
+
+.function_,
+.class_ {
+  @apply text-blue-400;
+}
+
+.hljs-attr,
+.hljs-property {
+  @apply text-rose-500;
+}
+
+.hljs-ln-n {
+  @apply text-neutral-700;
+}
+
+.hljs-number {
+  @apply italic text-orange-400;
+}
+
+.hljs-string {
+  @apply text-green-400;
+}
+
+.hljs-variable {
+  @apply text-orange-300;
 }
