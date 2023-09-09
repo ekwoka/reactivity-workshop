@@ -1,6 +1,13 @@
 <script lang="ts">
   import { Presentation } from '@components';
-  import { Intro, Reactivity, DeclarativeUI, Repo, Signal } from '@slides';
+  import {
+    Intro,
+    Reactivity,
+    DeclarativeUI,
+    Repo,
+    Signal,
+    Optimize,
+  } from '@slides';
 </script>
 
 <Presentation>
@@ -9,4 +16,5 @@
   <DeclarativeUI />
   <Repo />
   <Signal />
+  <Optimize />
 </Presentation>

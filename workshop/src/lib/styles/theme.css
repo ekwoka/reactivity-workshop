@@ -1,12 +1,9 @@
-@import '@fontsource-variable/manrope';
-@import '@fontsource-variable/jetbrains-mono';
-
 :root {
   @apply bg-zinc-800 text-4xl text-zinc-100;
   --r-main-font: 'monolisa';
   --r-main-color: hsl(226 19% 98%);
-  --r-heading-font: 'Manrope';
-  --r-code-font: 'JetBrains Mono Variable';
+  --r-heading-font: 'monolisa';
+  --r-code-font: 'monolisa';
   --r-link-color: hsl(180 100% 50%);
 }
 

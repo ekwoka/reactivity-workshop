@@ -77,3 +77,24 @@
     </Step>
   </ul>
 </Slide>
+<Slide animate>
+  <h2 class="font-semibold tracking-widest" data-id="title">Workshop Tips</h2>
+  <ul data-id="info" class="mx-auto max-w-max text-left text-[.5rem]">
+    <Step fadeInThenSemiOut type="li" class="mt-4">
+      <span class="italic">Ask</span>
+      Questions
+    </Step>
+    <Step fadeInThenSemiOut type="li" class="mt-4">
+      <span class="italic">Code Along</span>
+      with excercises
+    </Step>
+    <Step fadeInThenSemiOut type="li" class="mt-4">
+      <span class="italic">Participate</span>
+      in discussions
+    </Step>
+    <Step fadeInThenSemiOut type="li" class="mt-4">
+      <span class="italic">Explore</span>
+      possibilities
+    </Step>
+  </ul>
+</Slide>

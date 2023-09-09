@@ -337,8 +337,23 @@
     `}
   </Code>
 </Slide>
+<Slide animate animateRestart>
+  <Code lang="ts" data-id="code">
+    {`
+        let clicks = 0;
+        const button = document.querySelector('button')
+        button.textContent = \`\${clicks} clicks\`
+        button.addEventListener('click', () => clicks++)
+      `}
+  </Code>
+  <button
+    type="button"
+    class="rounded-lg bg-blue-700 px-4 py-2 shadow-lg transition-all hover:bg-blue-600 hover:shadow-none">
+    0 clicks
+  </button>
+</Slide>
 <Slide animate>
-  <Code lang="ts" lines="1,3">
+  <Code lang="ts" lines="1,3" data-id="code">
     {`
         let clicks = signal(${clicks});
         const button = document.querySelector('button')

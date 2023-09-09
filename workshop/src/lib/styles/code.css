@@ -1,4 +1,8 @@
 .hljs {
+  font-feature-settings:
+    'calt' on,
+    'liga' on,
+    'ss02' on;
   @apply block overflow-x-auto bg-zinc-800 p-2 leading-loose text-zinc-100;
 }
 
@@ -10,6 +14,10 @@
 .hljs-name,
 .hljs-string {
   color: #5de4c7;
+}
+
+.hljs-keyword {
+  @apply italic;
 }
 
 .hljs-code {
@@ -49,4 +57,5 @@
 .hljs-deletion,
 .hljs-meta {
   color: #a6accd;
+  @apply italic;
 }
